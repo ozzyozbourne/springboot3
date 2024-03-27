@@ -12,9 +12,10 @@ import org.springframework.context.annotation.FilterType;
 @EnableAutoConfiguration
 @ComponentScan(
         basePackageClasses = {One.class, Two.class, Config.class},
-        useDefaultFilters = false,
         includeFilters = @ComponentScan.Filter(
                 type = FilterType.ASSIGNABLE_TYPE,
                 classes = {FileSystem.class, Three.class, Two.class}
-        ))
+        )
+
+)
 public class Config {}

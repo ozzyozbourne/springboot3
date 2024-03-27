@@ -2,7 +2,6 @@ package com.example.demo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -11,7 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Service
-public final class FileSystem {
+public final class  FileSystem {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
     private final Path root = Paths.get(System.getProperty("user.home"))
